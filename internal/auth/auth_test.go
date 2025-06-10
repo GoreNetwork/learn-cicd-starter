@@ -7,3 +7,7 @@ func TestAlwaysPasses(t *testing.T) {
         t.Error("Somehow true isn't true... that's weird!")
     }
 }
+
+// func TestAlwaysFails(t *testing.T) {
+//     t.Fatal("This test is guaranteed to fail.")
+// }
