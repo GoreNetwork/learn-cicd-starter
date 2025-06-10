@@ -20,4 +20,6 @@ jobs:
 
       - name: Print Go version
         run: go version
+
+      - name: Success!!
         run: (exit 0)
