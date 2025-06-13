@@ -3,7 +3,8 @@ package auth
 import "testing"
 
 func TestAlwaysPasses(t *testing.T) {
-	if true != true {
+	a := 1
+	if a != 1 {
 		t.Error("Somehow true isn't true... that's weird!")
 	}
 }
