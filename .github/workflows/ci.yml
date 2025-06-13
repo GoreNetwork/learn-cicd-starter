@@ -5,9 +5,10 @@ on:
     branches: [main]
   workflow_dispatch:
     inputs:
-      environment:
-        description: "Environment to deploy to"
-        required: true
+      version:
+        description: 'Version to release'
+        required: false
+        default: '0.0.0'
 
 jobs:
   tests:
