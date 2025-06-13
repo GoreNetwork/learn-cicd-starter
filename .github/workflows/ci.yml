@@ -56,7 +56,7 @@ jobs:
       - name: test -z
         run: test -z $(go fmt ./...)     
 
-      - name: Run Tests
+      - name: go test
         run: go test ./... -cover
 
       - name: Success!!
