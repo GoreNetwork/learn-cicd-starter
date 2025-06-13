@@ -9,7 +9,8 @@ on:
         description: 'Version to release'
         required: false
         default: '0.0.0'
-
+  push:
+    branches: [main]
 jobs:
   tests:
     name: Tests
@@ -27,9 +28,9 @@ jobs:
       - name: Install gosec
         run: go install github.com/securego/gosec/v2/cmd/gosec@latest
       
-      - name: Run gosec
+      - name: go test
         run: gosec ./...
-        
+
   style:
     name: Style
     runs-on : ubuntu-latest
